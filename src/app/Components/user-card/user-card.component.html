@@ -1,0 +1,24 @@
+<div class="card mb-4 my-4">
+  <div class="card overflow-hidden text-center bg-light">
+    <img src="../../../assets/backgroung-imh.jpg" class="card-img-top img-fluid" alt="no image">
+
+    <div class="card-body p-0">
+      <a class="avatar xl rounded-circle bg-gray bg-opacity-10 p-1 position-relative mt-n5 d-block mx-auto">
+        <img src="../../../assets/Saamne-wala.webp" class="avatar-img img-fluid rounded-circle" alt="">
+      </a>
+      <h5 class="mb-0 pt-3">
+        <div>ID : {{user.id}}</div>
+        <p class="text-reset font-weight-bold"> Name :  {{ user.name}}</p>
+      </h5>
+      <div class="row mx-0 border-top border-bottom">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item px-3 d-flex align-items-center justify-content-between">
+            <div class="text-reset">
+              <a routerLink="/user-details/{{ user.id }}" class="btn btn-outline-danger"> Know More</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
